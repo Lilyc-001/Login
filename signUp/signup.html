@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="desgin.css">
+</head>
+<body>
+
+    <div class="box">
+      <div class="up"><h1>Sign up</h1></div>
+
+        <form>
+            <fieldset class="sign">
+             <legend>Your Basic Info</legend>
+               <div>
+                <label for="nam">Name:</label>
+                <input type="text" name="my" id="nam"> 
+                <span style="color: red;" id="nam_error"></span>
+               </div>
+               <div>
+                <label for="me">Email:</label>
+                <input type="email" name="my" id="email" >
+                <span style="color:red;" id="email_error"></span>
+               </div>
+               <div>
+                <label for="password">Password:</label>
+                <input type="text" name="my" id="password" onkeyup="validatePass()">
+                <span style="color: red;" id="pass_error"></span>
+               </div>
+               <div>
+                <label for="password">Comfirm Password:</label>
+                <input type="text" name="my" id="pass" onkeyup="validatePass()">
+                <span style="color: red;" id="passError"></span>
+               </div>
+               <div>
+                <label for="num">Number:</label>
+                <input type="text" id="num">
+                <span style="color: red;" id="num_error"></span>
+               </div>
+               <div>
+                 <p>Age:</p>
+                 <input type="radio" class="radio" name="age" value="Under 13" id="age"> 
+                 <label>Under 18</label><br>
+                 <input type="radio" class="radio" name="age" value="Above 13" id="age1">
+                 <label>Above 18</label><br>
+                 <button id="submit">Register</button>
+                 <span id="error"></span>
+               </div>
+                
+            </fieldset>
+         </form>
+
+    </div>
+    
+    <script src="script.js"></script>
+      
+    
+</body>
+</html>
